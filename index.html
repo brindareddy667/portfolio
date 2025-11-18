@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brinda Reddy | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="logo"></div> 
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#internships">Internships</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <header id="home">
+        <div class="hero-container">
+            <div class="hero-image">
+                <img src="assets/profile.jpeg" alt="Brinda Reddy">
+            </div>
+            <div class="hero-text">
+                <h1>Brinda Reddy</h1>
+                <h2>Computer Science Student & Data Analysis Enthusiast</h2>
+                <div class="education-badge">
+                    <p><i class="fas fa-graduation-cap"></i> B.Tech CSE, Woxsen University (CGPA: 8.9/10)</p>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/brinda-reddy-86b86430a" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/brindareddy667" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="mailto:brinda.reddy_2027@woxsen.edu.in"><i class="fas fa-envelope"></i></a>
+                </div>
+                <div class="cta-buttons">
+                    <a href="assets/brinda_resume.pdf" target="_blank" class="btn btn-primary">View Resume <i class="fas fa-eye"></i></a>
+                    <a href="#projects" class="btn btn-secondary">View Work</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Technical Proficiency</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Languages</h3>
+                    <div class="tags">
+                        <span>Python</span><span>SQL</span><span>HTML</span><span>CSS</span><span>JavaScript</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-layer-group"></i> Frameworks & Libs</h3>
+                    <div class="tags">
+                        <span>Flask</span><span>Django</span><span>Scikit-learn</span><span>Pandas</span><span>NumPy</span><span>XGBoost</span><span>Seaborn</span><span>Keras</span><span>Tkinter</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Soft Skills</h3>
+                    <div class="tags">
+                        <span>Git/GitHub</span><span>Power BI</span><span>Excel</span><span>Agile Teamwork</span><span>Problem Solving</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                
+                <div class="project-card" onclick="openModal('modal1')">
+                    <div class="card-top">
+                        <i class="fas fa-folder-open folder-icon"></i>
+                        <div class="project-links">
+                            <a href="https://github.com/brindareddy667/Smart-Queue" target="_blank" onclick="event.stopPropagation()">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>QR Smart Queue System</h3>
+                        <p>A digital solution replacing physical queues with remote QR joining and real-time tracking.</p>
+                        <ul class="tech-list">
+                            <li>Flask</li>
+                            <li>SQLite</li>
+                            <li>Time Series</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openModal('modal2')">
+                    <div class="card-top">
+                        <i class="fas fa-cloud folder-icon"></i>
+                        <div class="project-links">
+                            <a href="https://github.com/brindareddy667/cloud-cost-optimizer" target="_blank" onclick="event.stopPropagation()">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Smart Cloud Cost Manager</h3>
+                        <p>Web platform to forecast and optimize cloud expenditures using Linear Regression.</p>
+                        <ul class="tech-list">
+                            <li>Python</li>
+                            <li>Scikit-learn</li>
+                            <li>Flask</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openModal('modal3')">
+                    <div class="card-top">
+                        <i class="fas fa-chart-line folder-icon"></i>
+                        <div class="project-links">
+                            <a href="https://github.com/brindareddy667/Student-Performance-Dashboard-for-Universities" target="_blank" onclick="event.stopPropagation()">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Student Performance Dashboard</h3>
+                        <p>ML dashboard achieving ~85% accuracy in classifying student performance using XGBoost.</p>
+                        <ul class="tech-list">
+                            <li>XGBoost</li>
+                            <li>Pandas</li>
+                            <li>Seaborn</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openModal('modal4')">
+                    <div class="card-top">
+                        <i class="fas fa-robot folder-icon"></i>
+                        <div class="project-links">
+                            <a href="https://github.com/brindareddy667/PASTE_EXCUSE_LINK_HERE" target="_blank" onclick="event.stopPropagation()">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Intelligent Excuse Generator</h3>
+                        <p>Desktop app with voice interaction that generates believable excuses and apologies using AI logic.</p>
+                        <ul class="tech-list">
+                            <li>Python</li>
+                            <li>Tkinter</li>
+                            <li>SpeechRecog</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal1')">&times;</span>
+            <h2>QR-Based Smart Queue Management System</h2>
+            <div class="modal-body">
+                <p>This project is a digital solution designed to replace traditional physical queuing methods. It allows users to join queues remotely via QR codes, track their status in real-time, and receive notifications, significantly reducing physical overcrowding and wait times.</p>
+                
+                <h4>🎯 Objectives</h4>
+                <ul>
+                    <li><strong>Real-time Updates:</strong> Inform users of their position and estimated wait time.</li>
+                    <li><strong>Remote Joining:</strong> Users scan a QR code to join the queue without being physically present.</li>
+                    <li><strong>Predictive Analytics:</strong> Analyze historical data to forecast peak hours and service loads.</li>
+                </ul>
+
+                <h4>⚙️ System Architecture</h4>
+                <p>The system follows a <strong>Spiral Model</strong> development lifecycle. <strong>Frontend:</strong> HTML/CSS/JS. <strong>Backend:</strong> Python/Flask. <strong>Database:</strong> SQLite.</p>
+
+                <h4>📊 Results</h4>
+                <ul>
+                    <li><strong>Wait Time Reduction:</strong> Estimated 52% reduction in average waiting time.</li>
+                    <li><strong>Prediction Accuracy:</strong> Achieved ~92% accuracy in queue forecasting.</li>
+                </ul>
+
+                <h4>Media & Links</h4>
+                <div class="media-container">
+                    <video controls>
+                        <source src="assets/smart_queue.mp4.mov" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video> 
+                </div>
+                <a href="https://github.com/brindareddy667/Smart-Queue" target="_blank" class="github-btn"><i class="fab fa-github"></i> View Source Code</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal2')">&times;</span>
+            <h2>Smart Cloud Cost Manager</h2>
+            <div class="modal-body">
+                <p>A comprehensive web application designed to help users efficiently forecast, manage, and optimize their cloud expenditures in real-time. It addresses the complexity of cloud billing by providing tools for cost prediction, automated optimization, and an AI-powered service selector.</p>
+                
+                <h4>🚀 Features</h4>
+                <ul>
+                    <li><strong>Prediction Suite:</strong> Uses Linear Regression on historical usage data to predict upcoming bills.</li>
+                    <li><strong>Optimization Engine:</strong> Identifies underutilized resources (e.g., CPU usage < 20%) and suggests downsizing.</li>
+                    <li><strong>Cloud Bot (Agentblazer):</strong> AI-powered chatbot for architecture advice and detailed analysis.</li>
+                </ul>
+
+                <h4>🛠️ Tech Stack</h4>
+                <p><strong>Frontend:</strong> HTML, CSS, JavaScript. <strong>Backend:</strong> Python, Flask. <strong>ML:</strong> Scikit-learn (Linear Regression), Pandas.</p>
+
+                <h4>Media & Links</h4>
+                <div class="media-container">
+                    <video controls>
+                        <source src="assets/cloudcost.mov" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video> 
+                </div>
+                <a href="https://github.com/brindareddy667/cloud-cost-optimizer" target="_blank" class="github-btn"><i class="fab fa-github"></i> View Source Code</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal3')">&times;</span>
+            <h2>Student Performance Prediction & Dashboard</h2>
+            <div class="modal-body">
+                <p>This machine learning project aims to predict student academic performance at an early stage. By analyzing academic, behavioral, and demographic data, the system categorizes students into High, Medium, or Low performance groups.</p>
+                
+                <h4>🧠 Key Features</h4>
+                <ul>
+                    <li><strong>Multi-Factor Analysis:</strong> Considers grades, attendance, online engagement, and participation scores.</li>
+                    <li><strong>Data Visualization:</strong> EDA visualizations (heatmaps, charts) using Matplotlib and Seaborn.</li>
+                </ul>
+
+                <h4>🤖 Model Performance</h4>
+                <ul>
+                    <li><strong>Logistic Regression:</strong> ~70% Accuracy.</li>
+                    <li><strong>Random Forest:</strong> ~80% Accuracy.</li>
+                    <li><strong>XGBoost:</strong> Best performer (~85% Accuracy).</li>
+                </ul>
+
+                <h4>Media & Links</h4>
+                <div class="media-container">
+                    <video controls>
+                        <source src="assets/studentperf.mp4.mov" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video> 
+                </div>
+                <a href="https://github.com/brindareddy667/Student-Performance-Dashboard-for-Universities" target="_blank" class="github-btn"><i class="fab fa-github"></i> View Source Code</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal4')">&times;</span>
+            <h2>Intelligent Excuse Generator</h2>
+            <div class="modal-body">
+                <p>A desktop application built using Python that generates believable excuses and apologies based on scenarios provided by the user. It leverages AI-like logic with predefined templates, integrates voice input/output for accessibility, and stores history in a local database.</p>
+                
+                <h4>🎯 Objectives</h4>
+                <ul>
+                    <li><strong>AI-Powered Generation:</strong> Create excuses for real-life situations (School, Office, Party).</li>
+                    <li><strong>Voice Interaction:</strong> Full speech-to-text input and text-to-speech output.</li>
+                    <li><strong>Apology Generator:</strong> Generates Professional vs. Emotional apologies.</li>
+                    <li><strong>Persistence:</strong> SQLite integration to save and retrieve excuse history.</li>
+                </ul>
+
+                <h4>🚀 Key Features</h4>
+                <ul>
+                    <li><strong>Excuse Engine:</strong> Inputs via text or voice; suggests 5+ options per category.</li>
+                    <li><strong>History Viewer:</strong> Displays timestamps and past excuses to demonstrate data persistence.</li>
+                    <li><strong>AI Apology Module:</strong> Separate popup for drafting editable apologies with different tones.</li>
+                    <li><strong>Clear Function:</strong> Instantly resets input, dropdowns, and output areas.</li>
+                </ul>
+
+                <h4>🛠️ Tools & Technologies</h4>
+                <p><strong>Core:</strong> Python 3. <strong>GUI:</strong> Tkinter. <strong>Database:</strong> SQLite3.<br>
+                <strong>Audio:</strong> pyttsx3 (Text-to-Speech), SpeechRecognition + sounddevice (Voice Input).</p>
+
+                <h4>Media & Links</h4>
+                <div class="media-container">
+                    <video controls>
+                        <source src="assets/excuse_demo.mp4.mov" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video> 
+                </div>
+                <a href="https://github.com/brindareddy667/simple-AI-excuse-generator" target="_blank" class="github-btn"><i class="fab fa-github"></i> View Source Code</a>
+            </div>
+        </div>
+    </div>
+
+    <section id="internships" class="section alt-bg">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="internship-card">
+                <div class="intern-header">
+                    <div>
+                        <h3>AI Internship - Launched Program</h3>
+                        <h4>IIT Kharagpur & Wipro</h4>
+                    </div>
+                    <span class="date">July 2025 – Sept 2025</span>
+                </div>
+                <ul class="intern-details">
+                    <li>Applied deep learning principles by implementing <strong>Transfer Learning</strong> for image classification using the Keras API.</li>
+                    <li>Executed and analyzed techniques including Feature Extraction, Fine-tuning, and Data Augmentation.</li>
+                    <li>Performed full Exploratory Data Analysis (EDA) and built a Linear Regression model on the Housing Prices dataset.</li>
+                    <li>Proof of Concept: Developed a Simple AI Excuse Generator exploring NLP.</li>
+                </ul>
+                <div class="certificate-preview">
+                    <a href="assets/internship_cert.pdf" target="_blank">
+                        <i class="fas fa-file-pdf"></i> View Certificate
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="section">
+        <div class="container">
+            <h2 class="section-title">Certifications And Achievements</h2>
+            <div class="cert-grid">
+                
+                <a href="assets/internship_cert.pdf" target="_blank" class="cert-item">
+                    AI Launched Program (IIT Kharagpur x Wipro) <i class="fas fa-external-link-alt"></i>
+                </a>
+
+                <a href="https://coursera.org/share/7a01e2d117e8575a070be07cfa8aed2c" target="_blank" class="cert-item">
+                    Database Management Essentials <i class="fas fa-external-link-alt"></i>
+                </a>
+
+                <a href="https://coursera.org/share/5aa7e29f2c9983a603a014003a2d1976" target="_blank" class="cert-item">
+                    Python Data Structures  <i class="fas fa-external-link-alt"></i>
+                </a>
+
+                <a href="https://coursera.org/share/f95f6f2f1a4052cd489eeb2b5ad96ec6" target="_blank" class="cert-item">
+                    Probability & Statistics for Machine Learning And Data Science <i class="fas fa-external-link-alt"></i>
+                </a>
+
+                <a href="https://coursera.org/share/ac671e088ad72dce4c94f03600c9665c" target="_blank" class="cert-item">
+                    Programming Foundations with JavaScript, HTML and CSS (Coursera) <i class="fas fa-external-link-alt"></i>
+                </a>
+
+                <a href="https://coursera.org/share/a4b46c8d62e5651b8b5f701a550b9665" target="_blank" class="cert-item">
+                    Introduction to TensorFlow for AI, ML, and DL  <i class="fas fa-external-link-alt"></i>
+                </a>
+
+                <a href="https://coursera.org/share/f9be5e349d35f4745f69ec8d9160811d" target="_blank" class="cert-item">
+                    Introduction to IoT and Embedded Systems  <i class="fas fa-external-link-alt"></i>
+                </a>
+
+                <a href="https://www.salesforce.com/trailblazer/nbuk3n8fdl1th5dvko" target="_blank" class="cert-item">
+                    Salesforce Agentblazer Innovator Badge  <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Brinda Reddy. Built with HTML, CSS, & JavaScript.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
